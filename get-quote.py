@@ -3,9 +3,12 @@ def quote():
 
   f = open("quotes.txt")
   quotes = f.readlines()
+  #f.write("\nAll things are difficult before they are easy")
   f.close()
 
-  print(quotes[-1])
+ 
+  for a_quote in quotes:
+   print(a_quote, end='')
 
 if __name__== "__main__":
   quote()
